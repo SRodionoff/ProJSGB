@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>eShop</title>
+</head>
+<body>
+  <header>
+    <button class="cart-button" type="button">Корзина</button>
+  </header>
+  <main>
+    
+    <div class="goods-list"></div>
+
+  </main>
+
+  <form name="" action="" id="form">
+      Собери бургер
+      <div class="row">
+        <p>Выберите размер</p>
+        <div class="radio-variant">
+          <input type="radio" name="size" id="small" value="small" checked/>
+          <label for="small">Маленький</label>
+        </div>
+        <div class="radio-variant">
+          <input type="radio" name="size" id="large" value="large" />
+          <label for="large">Большой</label>
+        </div>
+      </div>
+      <div class="row additions">
+        <p>Добавки</p>
+        <div class="checkbox-variant">
+          <input type="checkbox" name="add" id="cheese" value="cheese"/>
+          <label for="cheese">Сыр</label>
+        </div>
+        <div class="checkbox-variant">
+          <input type="checkbox" name="add" id="salad" value="salad"/>
+          <label for="salad">Салат</label>
+        </div>
+        <div class="checkbox-variant">
+          <input type="checkbox" name="add" id="potato" value="potato"/>
+          <label for="potato">Картофель</label>
+        </div>
+        <div class="checkbox-variant">
+          <input type="checkbox" name="add" id="mayo" value="mayo"/>
+          <label for="mayo">Майонез</label>
+        </div>
+        <div class="checkbox-variant">
+          <input type="checkbox" name="add" id="spices" value="spices"/>
+          <label for="spices">Специи</label>
+        </div>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Посчитать" />
+      </div>
+    </fieldset>
+    <br />
+    <div id="result">
+      <div><b>Стоимость:</b> <span id="price">0</span> руб</div>
+      <div><b>Калорийность:</b> <span id="calories">0</span> кКал</div>
+    </div>
+  </form>
+  
+  <script src="script.js"></script>
+  <script src="my.js"></script>
+</body>
+</html>
